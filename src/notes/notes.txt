@@ -1,0 +1,72 @@
+npx create-react--app first-app
+Start React App: npm start
+
+Install Bootstrap
+-----------------
+npm install bootstrap
+
+font-awesome
+------------
+npm i font-awesome
+npm i @fortawesome/fontawesome-free
+
+Connect font-awesome CDN link to HTML(index.html)
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+Connect Link all css and js files to startup files(index.js)
+/*
+Bootstrap and font-awesome configuration
+ */
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.bundle'
+import 'font-awesome/css/font-awesome.css'
+
+Google fonts
+-------------
+index.css
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+axios, react-router-dom
+-----------------------
+axios: To make the backend connection with React application
+npm install axios
+react-router-dom: It enables you to implement dynamic routing in a web page.
+npm install react-router-dom
+
+Components
+----------
+navbar
+contact-list
+view-contact
+edit-contact
+add-contact
+
+Services:
+--------
+ContactService
+
+NOTE: If we are using react-router-dom 6.X, then slight change in index.js
+<BrowserRouter>
+     <App/>
+</BrowserRouter>
+
+Backend:
+--------
+json-server: npm install json-server
+json file: db.json(database file)
+package.json: npm init --yes
+
+API's
+-----
+GET all contacts: GET-> URL: http://localhost:9000/contacts
+GET single contact: GET-> URL: http://localhost:9000/contacts/Id
+Create contact: POST-> URL: http://localhost:9000/contacts
+Update contact: PUT-> URL: http://localhost:9000/contacts/Id
+Delete contact: DELETE-> URL: http://localhost:9000/contacts/Id
+
+
