@@ -103,7 +103,7 @@ let ContactList = (effect, inputs) => {
                                 <div className="col">
                                     <div className="mb-2">
                                         <input name="text" value={query.text} onChange={searchContacts}
-                                            type="text" className="form-control" placeholder="Search Names"/>
+                                            type="text" className="form-control" placeholder="Search Names" required={true}/>
                                     </div>
                                 </div>
                                 <div className="col">
